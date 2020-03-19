@@ -1,0 +1,145 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.top-bar {
+    border-bottom: 0px solid lightgrey;
+}
+
+.contact-wrap {
+    text-align: right;
+    height: 70px;
+    position: relative;
+    padding: 0 30px;
+}
+
+.contact-wrap .primary-btn.fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.contact-wrap .primary-btn {
+    padding-left: 65px;
+    background-image: url(mail.svg);
+    background-position: left 30px center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+}
+
+.quote-here {
+    position: relative;
+}
+
+.quote-here::before {
+    color: #fcfafe;
+    content: "\201C";
+    font-family: Arial Black;
+    font-size: 600px;
+    font-style: normal;
+    font-weight: 900;
+    left: -150px;
+    line-height: 30px;
+    pointer-events: none;
+    position: absolute;
+    top: 200px;
+    color: black;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.testimonial-content {
+    z-index: 1;
+}
+
+.polyblue {
+    background: #48b9ea;
+}
+
+.polypurple {
+    background: #3f3d56;
+}
+
+.testimonial-image {
+    height: 300px;
+    margin: 0;
+    width: 300px;
+}
+
+.testimonial-logo {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.customerLogo {
+    background-color: white;
+    height: 102px;
+    width: 102px;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 70px;
+}
+
+.customerLogo-image {
+    max-height: 60px;
+    width: 60px;
+}
+
+.testimonial-imageContainer {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 260px;
+    position: relative;
+    width: 260px;
+    margin-left: auto;
+}
+
+.btn {
+    background: #48b9ea;
+    padding: 15px 35px 15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    margin: 10px;
+    white-space: normal;
+    color: #fff;
+}
+
+.origami-background {
+    position: relative;   
+}
+
+.contact-body {
+    z-index: 1;
+}
+
+.origami-left {
+    background-position: center left;
+    background-image: url(ilumi-left.svg);
+    left: 0;
+}
+.origami-right {
+    background-position: center right;
+    background-image: url(nati-right.svg);
+    right: 0;
+}
+.origami-left, .origami-right {
+    z-index: 0;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    width: 66%;
+    height: 66%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

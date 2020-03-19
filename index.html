@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polytope</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="leading-normal tracking-normal text-gray-900">
+    <div class="pb-14 bg-right bg-cover mb-12">
+        <!--Nav-->
+        <div class="w-full p-6 top-bar">
+            <div class="container mx-auto">
+                <div class="w-full flex items-center justify-between">
+                    <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                        href="#">
+                        <img src="logo-01.svg" class="h-12 fill-current text-indigo-600 pr-2" />
+                    </a>
+
+                    <div class="flex w-1/2 justify-end content-center">
+                        <a class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+                            data-tippy-content="@twitter_handle" href="https://twitter.com/intent/tweet?url=#">
+                            <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path
+                                    d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+                            data-tippy-content="@twitter_handle" href="https://twitter.com/intent/tweet?url=#">
+                            <svg class="fill-current h-6" viewBox="0 0 29 29">
+                                <path
+                                    d="M14.499 0C6.493 0 0 6.656 0 14.867c0 6.569 4.154 12.14 9.916 14.107.726.137.99-.323.99-.717 0-.352-.012-1.288-.02-2.528-4.033.898-4.884-1.993-4.884-1.993-.66-1.718-1.61-2.175-1.61-2.175-1.317-.922.1-.904.1-.904 1.455.105 2.22 1.533 2.22 1.533 1.294 2.271 3.395 1.615 4.22 1.235.132-.96.507-1.616.921-1.987-3.22-.375-6.605-1.651-6.605-7.348 0-1.623.566-2.95 1.493-3.99-.15-.375-.647-1.888.142-3.934 0 0 1.217-.4 3.987 1.524a13.567 13.567 0 0 1 3.63-.5c1.232.005 2.472.17 3.63.5 2.769-1.924 3.984-1.524 3.984-1.524.791 2.046.294 3.559.145 3.935.93 1.038 1.49 2.366 1.49 3.989 0 5.711-3.39 6.968-6.62 7.336.52.459.984 1.366.984 2.753 0 1.987-.018 3.59-.018 4.078 0 .398.262.86.997.716C24.849 27.003 29 21.434 29 14.867 29 6.657 22.507 0 14.499 0"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 "
+                            data-tippy-content="#facebook_id" href="https://www.facebook.com/sharer/sharer.php?u=#">
+                            <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+
+            <!--Left Col-->
+            <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+                <h1
+                    class="my-4 text-3xl md:text-5xl font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
+                    transforming students into professionals
+                </h1>
+                <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+                    a more detailed description of what our slogan means here. something with Praxis.
+                </p>
+            </div>
+
+            <!--Right Col-->
+            <div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
+                <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="undraw_career_progress_ivdb.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial w-full polypurple">
+        <div class="container mx-auto">
+            <div class="w-2/3 flex px-8 py-12 justify-center mx-auto">
+                <div class="quote-here flex flex-1 justify-center items-center mr-12">
+                    <div class="testimonial-content flex-1">
+                        <p class="testimonial-quote text-white text-2xl">
+                            Polytope is built by engineers for engineers. The
+                            workflow of the tool fits perfectly - we were able
+                            to get set up in less than 69 minutes for a 420 person software team.
+                        </p>
+                        <div class="testimonial-cite text-white font-bold mt-4 italic">Dia Midjord, CEO</div>
+                        <p class="testimonial-hint text-white">P/F Auto</p>
+                    </div>
+                </div>
+                <div class="testimonial-image relative">
+                    <div class="testimonial-imageContainer"
+                        style="background-image:url(https://images.prismic.io/clubhouse/6cd368ab-beb5-4c91-bfbb-5da4f1de319e_james-t.jpg?auto=compress,format)">
+                        <div class="testimonial-logo">
+                            <div class="customerLogo">
+                                <div class="customerLogo-image">
+                                    <img src="logo.png" alt="" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto flex items-center my-12 md:my-24 justify-center origami-background">
+        <div class="origami-left hidden lg:block"></div>
+        <div class="origami-right hidden lg:block"></div>
+        <!--Left Col-->
+        <div class="contact-body container flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+            <h1 class="leading-normal font-bold text-3xl md:text-5xl my-4 text-center w-full">
+                contact polytope
+            </h1>
+            <h2 class="leading-normal text-base md:text-2xl mb-8 text-center text-gray-700 w-full">
+                looking for more information? find our contact information below and we will get back to you shortly
+            </h2>
+
+            <div class="flex flex-col md:flex-row w-full">
+                <div class="flex-1 w-full rounded overflow-hidden shadow-lg">
+                    <iframe class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.884102905461!2d9.984419853027783!3d57.01339844475105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464eccdc004e86a7%3A0x2f0ab12fcde56e4c!2sNiels%20Jernes%20Vej%2014%2C%209220%20Aalborg!5e0!3m2!1sen!2sdk!4v1583871761551!5m2!1sen!2sdk"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="flex-1 max-w-full-md rounded overflow-hidden shadow-lg bg-white">
+                    <div class="px-6 py-4">
+                        <div class="mx-auto w-1/2 lg:w-1/3 contact-image mb-4 hidden md:block">
+                            <img src="contact.svg" width="100%" />
+                        </div>
+                        <div class="font-bold text-xl mb-2">Polytope IVS</div>
+                        <div class="text-gray-700 text-base">
+                            <p>c/o Polytope</p>
+                            <p>Niels Jernes Vej 10, 3-328</p>
+                            <p>9220 Aalborg Øst</p>
+                            <p>Denmark</p>
+                            <p class="mt-4">
+                                <a href="tel:+4522939464">
+                                    <p class="inline">tel: </p>
+                                    <p class="inline text-indigo-500">+45 22 93 94 64</p>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="mailto:contact@polytope.dk">
+                                    <p class="inline">email: </p>
+                                    <p class="inline text-indigo-500">contact@polytope.dk</p>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white">
+        <div class="container mx-auto mt-8 px-8">
+            <div class="w-full flex flex-col md:flex-row py-6">
+                <div class="flex-1 mb-6">
+                    <a class="flex items-center no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                        href="#">
+                        <img src="logo-03.svg" class="h-6 fill-current text-indigo-600 pr-2" />
+                    </a>
+                </div>
+
+                <div class="flex-1">
+                    <p class="uppercase font-extrabold text-gray-500 md:mb-6">Links</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">FAQ</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase font-extrabold text-gray-500 md:mb-6">Legal</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase font-extrabold text-gray-500 md:mb-6">Social</p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Facebook</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Linkedin</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="uppercase font-extrabold text-gray-500 md:mb-6">
+                        Company
+                    </p>
+                    <ul class="list-reset mb-6">
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Official
+                                Blog</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">About
+                                Us</a>
+                        </li>
+                        <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                            <a href="#"
+                                class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="contact-wrap" id="floatingContactWrap">
+        <div class="btn primary-btn fixed cursor-pointer" id="floatingContactButton" style="display: inline-block;">
+            Contact Us
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

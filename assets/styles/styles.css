@@ -6,6 +6,48 @@ body {
     border-bottom: 0px solid lightgrey;
 }
 
+.hero {
+    height: calc(100vh - 144px);
+}
+
+.bitch::before {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.bitch {
+    position: relative;
+}
+
+.bitch::after {
+    border-bottom: 0.4em solid rgba(0,0,0,0.8);
+    content: "";
+    left: 0;
+    margin-top: calc(0.4em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(-2.5deg);
+}
+
+.bitch-ast {
+    vertical-align:sub;
+}
+
+.good-step {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 60px;
+    background: #fff;
+}
+
 .contact-wrap {
     text-align: right;
     height: 70px;
@@ -24,7 +66,7 @@ body {
 
 .contact-wrap .primary-btn {
     padding-left: 65px;
-    background-image: url(mail.svg);
+    background-image: url(../icons/mail.svg);
     background-position: left 30px center;
     background-repeat: no-repeat;
     background-size: 22px;
@@ -55,6 +97,10 @@ body {
     z-index: 1;
 }
 
+.txt-polyblue {
+    color: #48b9ea;
+}
+
 .polyblue {
     background: #48b9ea;
 }
@@ -65,8 +111,8 @@ body {
 
 .testimonial-image {
     height: 300px;
-    margin: 0;
-    width: 300px;
+    /*margin: 0;
+    width: 300px;*/
 }
 
 .testimonial-logo {
@@ -100,7 +146,6 @@ body {
     height: 260px;
     position: relative;
     width: 260px;
-    margin-left: auto;
 }
 
 .btn {
@@ -125,12 +170,12 @@ body {
 
 .origami-left {
     background-position: center left;
-    background-image: url(ilumi-left.svg);
+    background-image: url(../graphics/ilumi-left.svg);
     left: 0;
 }
 .origami-right {
     background-position: center right;
-    background-image: url(nati-right.svg);
+    background-image: url(../graphics/nati-right.svg);
     right: 0;
 }
 .origami-left, .origami-right {
